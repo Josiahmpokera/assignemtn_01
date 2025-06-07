@@ -1,0 +1,204 @@
+/* Custom styles for Online Learning System */
+.course-card {
+   transition: transform 0.3s ease;
+   margin-bottom: 20px;
+}
+
+.course-card:hover {
+   transform: translateY(-5px);
+}
+
+.course-image {
+   height: 200px;
+   object-fit: cover;
+}
+
+.hero-section {
+   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero-bg.jpg');
+   background-size: cover;
+   background-position: center;
+   color: white;
+   padding: 100px 0;
+   margin-bottom: 50px;
+}
+
+.dashboard-card {
+   border-radius: 10px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.progress {
+   height: 25px;
+}
+
+/* Custom styles for forms */
+.form-container {
+   max-width: 500px;
+   margin: 0 auto;
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+   .hero-section {
+      padding: 50px 0;
+   }
+}
+
+/* Footer styling */
+html,
+body {
+   height: 100%;
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+}
+
+.container {
+   flex: 1 0 auto;
+}
+
+footer {
+   flex-shrink: 0;
+   width: 100%;
+   position: relative;
+   bottom: 0;
+}
+
+/* General Styles */
+:root {
+   --primary-color: #1cc88a;
+   --secondary-color: #1cc88a;
+   --dark-color: #5a5c69;
+   --light-color: #f8f9fc;
+}
+
+body {
+   font-family: 'Nunito', sans-serif;
+   color: var(--dark-color);
+}
+
+/* Hero Section */
+.hero {
+   min-height: 530px;
+   display: flex;
+   align-items: center;
+}
+
+.hero h1 {
+   font-size: 3.5rem;
+   font-weight: 800;
+   line-height: 1.2;
+}
+
+/* Cards */
+.card {
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   border-radius: 10px;
+   overflow: hidden;
+}
+
+.card:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.card-img-top {
+   height: 200px;
+   object-fit: cover;
+}
+
+/* Buttons */
+.btn-primary {
+   background-color: var(--primary-color);
+   border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+   background-color: #224abe;
+   border-color: #224abe;
+   transform: translateY(-2px);
+}
+
+/* Features Section */
+.features .card {
+   border: none;
+   padding: 2rem;
+}
+
+.features i {
+   color: var(--primary-color);
+   margin-bottom: 1.5rem;
+}
+
+/* Testimonials */
+.testimonials .card {
+   padding: 2rem;
+}
+
+.testimonials img {
+   object-fit: cover;
+}
+
+/* Animations */
+@keyframes fadeIn {
+   from {
+      opacity: 0;
+      transform: translateY(20px);
+   }
+
+   to {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+.hero,
+.features,
+.featured-courses,
+.testimonials {
+   animation: fadeIn 1s ease-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+   .hero {
+      text-align: center;
+      padding: 4rem 0;
+   }
+
+   .hero h1 {
+      font-size: 2.5rem;
+   }
+
+   .hero .btn {
+      width: 100%;
+      margin-bottom: 1rem;
+   }
+
+   .features .card {
+      margin-bottom: 1.5rem;
+   }
+}
+
+/* Login Page Specific Styles */
+body.login-page {
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+}
+
+.login-page .container {
+   flex: 1;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.login-page footer {
+   margin-top: auto;
+}

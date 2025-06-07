@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS lessons (
+    lesson_id INT AUTO_INCREMENT PRIMARY KEY,
+    module_id INT NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    content TEXT NOT NULL,
+    video_url VARCHAR(255),
+    duration INT,
+    order_number INT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (module_id) REFERENCES modules(module_id) ON DELETE CASCADE
+); 
