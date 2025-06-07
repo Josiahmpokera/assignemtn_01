@@ -119,61 +119,7 @@ if ($result = mysqli_query($conn, $sql)) {
     </div>
 </section>
 
-<!-- Testimonials Section -->
-<section class="py-5">
-    <div class="container">
-        <div class="row text-center mb-5">
-            <div class="col-12">
-                <h2 class="fw-bold">What Our Students Say</h2>
-                <p class="lead text-muted">Success stories from our community</p>
-            </div>
-        </div>
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="card h-100 border-0 shadow-sm">
-                    <div class="card-body">
-                        <div class="d-flex align-items-center mb-3">
-                           
-                            <div>
-                                <h6 class="mb-0">John Doe</h6>
-                                <small class="text-muted">Web Developer</small>
-                            </div>
-                        </div>
-                        <p class="card-text">"The courses are well-structured and the instructors are knowledgeable. I've learned so much and improved my skills significantly."</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100 border-0 shadow-sm">
-                    <div class="card-body">
-                        <div class="d-flex align-items-center mb-3">
-                           
-                            <div>
-                                <h6 class="mb-0">Jane Smith</h6>
-                                <small class="text-muted">Data Analyst</small>
-                            </div>
-                        </div>
-                        <p class="card-text">"The platform is user-friendly and the support team is always helpful. I've completed several courses and each one was valuable."</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100 border-0 shadow-sm">
-                    <div class="card-body">
-                        <div class="d-flex align-items-center mb-3">
-                         
-                            <div>
-                                <h6 class="mb-0">Mike Johnson</h6>
-                                <small class="text-muted">UI/UX Designer</small>
-                            </div>
-                        </div>
-                        <p class="card-text">"The quality of the courses exceeded my expectations. The practical projects helped me build a strong portfolio."</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
 
 <!-- CTA Section -->
 <section class="py-5 mb-4 rounded-3 bg-success text-white">
